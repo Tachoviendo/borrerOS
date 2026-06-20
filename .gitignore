@@ -1,0 +1,15 @@
+# Kernel source and tarball (se descarga y compila con el script)
+kernel/linux-*/
+kernel/*.tar.*
+
+# Root filesystem (se genera con debootstrap)
+rootfs/
+
+# Disk images
+*.img
+
+# Build artifacts
+*.o
+*.ko
+*.mod
+*.mod.c
