@@ -58,3 +58,9 @@ Basicamente, un poco de lo que hicimos anteriormente, montar todo el filesystem 
  y tertminamos, ahora demontamos todo con `umount` y salimos del chroot 
 
 
+# Bootear con QEMu 
+
+el momento de la verdad, si hicimos todo bien, deberia andar nuestra img. 
+
+`qemu-system-x86_64 -hda borreros.img -m 2G -enable-kvm`
+
