@@ -64,3 +64,8 @@ el momento de la verdad, si hicimos todo bien, deberia andar nuestra img.
 
 `qemu-system-x86_64 -hda borreros.img -m 2G -enable-kvm`
 
+
+Ignacio Silva 
+
+
+

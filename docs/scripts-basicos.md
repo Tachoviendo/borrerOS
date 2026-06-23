@@ -12,7 +12,10 @@ para replicar borrerOS hay que ejecutar:
 3. `sudo ./scripts/build_image.sh`
 4. `./run_qemu.sh`
 
-## Compile kernel 
+Cada uno de estos scripts son automatizar todo el preceso que documento en `fritsSteps.md` y `hacer una .img.md`
+
+Ignacio Silva. 
+
 
 
 
