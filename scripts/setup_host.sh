@@ -12,7 +12,7 @@ if command -v apt-get &>/dev/null; then
     echo "Detectado: Debian/Ubuntu (WSL2)"
     apt-get update
     apt-get install -y \
-        build-essential bc flex bison libelf-dev dwarves \
+        build-essential bc fdisk flex bison libelf-dev dwarves \
         perl python3 cpio xmlto libssl-dev \
         debootstrap \
         qemu-system-x86 \
