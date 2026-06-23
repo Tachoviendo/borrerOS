@@ -147,6 +147,8 @@ Me tiro un monton de warnings pero fingimos demencia!.
 ### (tengo que agarrar el omnibus a las 22.30 para ir a la bella asi que hasta aca llegue. Allá compilo la img!"")
 
 
+Ignacio Silva. 
+
 
 
 
