@@ -19,6 +19,6 @@ borrerOS y checkeamos que todo se haya clonado bien: `cd borrerOS & ls`.
 obviamente la usar sudo nos va a pedir la contraseña, ingresamos la misma que pusimos cuando instalamos ubuntu (si te la olvidaste problema tuyo jajka), esto va a tardar unos minutos.
 Si llegamos a `=== Dependencias instaladas ===` estamos en la gloria.
 
-4. Instalar qemu desde la web oficinal utilizando `MSYs2` https://www.qemu.org/download/#windows
+4. Instalar qemu: Tenemos dos opciones, la primera es instalarlo desde la web oficial con `MSYs2` https://www.qemu.org/download/#windows, pero primero te recomiendo probar lo siguiente en nuestra terminal de wsl, para ahorrarnos dolores de cabeza, probamos instalar directamente con: `sudo apt install qemu-system-x86`, una vez se instale checkeamos que este todo OK con `qemu-system-x86_64 --version`
 
-4. y despues seguir en `scripts-basicos.md`
+4. Si esta todo ok, ahora pasamos a `scripts-basicos.md`, mucha suerte!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
