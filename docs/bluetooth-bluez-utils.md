@@ -57,7 +57,7 @@ En el paso de aprovisionamiento por `chroot` (donde se instalan los paquetes med
 apt install -y \
     rofi \
     bzmenu \
-    bluez \ este no agregar porque no esta como paquete apt, estoy viendo como lo puedo instalarlo vía pipx/cargo.
+    bluez \
     bluez-utils \
     pulseaudio \
     pavucontrol

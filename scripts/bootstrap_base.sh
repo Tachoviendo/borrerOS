@@ -46,7 +46,7 @@ chroot "$ROOTFS_DIR" /bin/bash -c "
     export DEBIAN_FRONTEND=noninteractive
     
     apt update
-    apt install -y initramfs-tools grub-pc xorg rofi pulseaudio pavucontrol bluez bluez-utils
+    apt install -y initramfs-tools grub-pc xorg rofi pulseaudio pavucontrol bluez bluez-utils bzmenu
     
     # Activar el servicio de Bluetooth para que arranque con BorrerOS
     systemctl enable bluetooth
