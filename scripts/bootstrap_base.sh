@@ -40,11 +40,14 @@ echo "[4/6] Configurando hostname y fstab..."
 echo "borreros" > "${ROOTFS_DIR}/etc/hostname"
 echo "/dev/sda1  /  ext4  defaults  0  1" > "${ROOTFS_DIR}/etc/fstab"
 
-echo "[5/6] Instalando initramfs y GRUB dentro del chroot..."
+echo "[5/6] Instalando initramfs, GRUB, Entorno Gráfico y Audio dentro del chroot..."
 chroot "$ROOTFS_DIR" /bin/bash -c "
     export PATH=\$PATH:/usr/sbin
+    export DEBIAN_FRONTEND=noninteractive
+    
     apt update
-    apt install -y initramfs-tools grub-pc
+    apt install -y initramfs-tools grub-pc 
+    
     mkinitramfs -o /boot/initrd.img-${KERNEL_VERSION} ${KERNEL_VERSION}
 "
 
