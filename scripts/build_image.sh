@@ -4,7 +4,7 @@ set -e
 PROJECT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 ROOTFS_DIR="${PROJECT_DIR}/rootfs"
 IMG_FILE="${PROJECT_DIR}/borreros.img"
-IMG_SIZE_MB=4000
+IMG_SIZE_MB=10000
 MOUNT_POINT="/mnt/borreros"
 
 echo "=== BorrerOS - Construcción de Imagen de Disco ==="
