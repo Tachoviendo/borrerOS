@@ -46,7 +46,7 @@ chroot "$ROOTFS_DIR" /bin/bash -c "
     export DEBIAN_FRONTEND=noninteractive
     
     apt update
-    apt install -y initramfs-tools grub-pc xorg rofi pulseaudio pavucontrol
+    apt install -y initramfs-tools grub-pc 
     
     mkinitramfs -o /boot/initrd.img-${KERNEL_VERSION} ${KERNEL_VERSION}
 "
