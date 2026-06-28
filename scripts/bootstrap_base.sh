@@ -44,10 +44,10 @@ echo "[5/6] Instalando initramfs, GRUB, Entorno Gráfico y Audio dentro del chro
 chroot "$ROOTFS_DIR" /bin/bash -c "
     export PATH=\$PATH:/usr/sbin
     export DEBIAN_FRONTEND=noninteractive
-    
+
     apt update
-    apt install -y initramfs-tools grub-pc 
-    
+    apt install -y initramfs-tools grub-pc
+
     mkinitramfs -o /boot/initrd.img-${KERNEL_VERSION} ${KERNEL_VERSION}
 "
 
