@@ -22,9 +22,7 @@ chroot "$ROOTFS_DIR" /bin/bash -c "
     export DEBIAN_FRONTEND=noninteractive
     apt update
     apt install -y \
-        bluez \
-        bluez-utils \
-        bzmenu
+        bluez 
 "
 
 echo "[2/2] Habilitando servicio de bluetooth..."
