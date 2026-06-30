@@ -13,3 +13,18 @@ rootfs/
 *.ko
 *.mod
 *.mod.c
+
+# Sphinx build output (generado, no se versiona)
+docs/build/
+
+# Cache interna de Sphinx
+docs/**/.doctrees/
+docs/**/*.doctree
+
+# Entorno virtual de Python para Sphinx
+docs/venv/
+docs/.venv/
+
+# Cache de Python
+docs/**/__pycache__/
+docs/**/*.pyc
