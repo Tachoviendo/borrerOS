@@ -32,8 +32,11 @@ chroot "$ROOTFS_DIR" /bin/bash -c "
 
 echo "[2/2] Habilitando servicios de PipeWire..."
 chroot "$ROOTFS_DIR" /bin/bash -c "
-    export PATH=\$PATH:/usr/sbin
-    systemctl --global enable pipewire pipewire-pulse wireplumber
+    mkdir -p /etc/systemd/user/default.target.wants
+    for svc in pipewire pipewire-pulse wireplumber; do
+        ln -sf /usr/lib/systemd/user/\${svc}.service \
+            /etc/systemd/user/default.target.wants/\${svc}.service
+    done
 "
 
 echo ""
