@@ -1,0 +1,64 @@
+/* This file intentionally left blank. */
+/* Colores UCU */
+.wy-nav-side {
+    background: #003366 !important;
+}
+
+.wy-side-nav-search {
+    background: #002244 !important;
+}
+
+.wy-side-nav-search a {
+    color: #F5A800 !important;
+    font-weight: bold;
+}
+
+.wy-nav-top {
+    background: #003366 !important;
+}
+
+.wy-nav-top a {
+    color: #F5A800 !important;
+}
+
+.wy-menu-vertical a {
+    color: #cce0ff !important;
+}
+
+.wy-menu-vertical a:hover {
+    background: #F5A800 !important;
+    color: #003366 !important;
+}
+
+.wy-menu-vertical li.current>a {
+    background: #00245a !important;
+    color: #F5A800 !important;
+}
+
+.wy-menu-vertical p.caption {
+    color: #F5A800 !important;
+    font-weight: bold;
+}
+
+.rst-content h1 {
+    color: #003366;
+    border-bottom: 3px solid #F5A800;
+    padding-bottom: 8px;
+}
+
+.rst-content h2 {
+    color: #003366;
+}
+
+.rst-content table.docutils th {
+    background: #003366 !important;
+    color: white !important;
+}
+
+.rst-content table.docutils tr:nth-child(even) {
+    background: #f0f4fa;
+}
+
+footer {
+    border-top: 2px solid #003366;
+}
