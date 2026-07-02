@@ -51,7 +51,7 @@ El código fuente y la arquitectura de scripts se organizan de la siguiente mane
 └── README.md                      # Este archivo informativo
 ```
 ## 👥 El equipo.
-<img src="assets/Ignacio_Silva_Card.png" width="300" alt="Ignacio Silva" align="center">
-<img src="assets/Lucas_Chiappini_Card.png" width="300" alt="Lucas Chiappini" align="center">
-<img src="assets/Nicolas_Dia_Card.png" width="300" alt="Nicolas Diaz" align="center">
-<img src="assets/Emmanuel_Aristov_Card.png" width="300" alt="Emmanuel Aristov" align="center">
+<img src="assets/cards/Ignacio_Silva_Card.png" width="300" alt="Ignacio Silva" align="center">
+<img src="assets/cards/Lucas_Chiappini_Card.png" width="300" alt="Lucas Chiappini" align="center">
+<img src="assets/cards/Nicolas_Dia_Card.png" width="300" alt="Nicolas Diaz" align="center">
+<img src="assets/cards/Emmanuel_Aristov_Card.png" width="300" alt="Emmanuel Aristov" align="center">
