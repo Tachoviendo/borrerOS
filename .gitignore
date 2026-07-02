@@ -8,6 +8,14 @@ rootfs/
 # Disk images
 *.img
 
+# ISO build artifacts (se generan con scripts/export_iso.sh)
+*.iso
+*.squashfs
+iso/
+
+# Logs de pruebas en QEMU
+qemu-serial.log
+
 # Build artifacts
 *.o
 *.ko

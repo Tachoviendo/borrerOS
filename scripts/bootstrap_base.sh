@@ -27,6 +27,7 @@ mkdir -p "${ROOTFS_DIR}/boot"
 cp "${KERNEL_DIR}/arch/x86/boot/bzImage" "${ROOTFS_DIR}/boot/vmlinuz-${KERNEL_VERSION}"
 cp "${KERNEL_DIR}/.config" "${ROOTFS_DIR}/boot/config-${KERNEL_VERSION}"
 make -C "$KERNEL_DIR" INSTALL_MOD_PATH="$ROOTFS_DIR" modules_install
+echo "kernel/fs/overlayfs/overlay.ko" >> "${ROOTFS_DIR}/lib/modules/${KERNEL_VERSION}/modules.builtin"
 
 # Montar filesystems virtuales para chroot
 echo "[3/6] Montando filesystems virtuales..."
@@ -46,7 +47,7 @@ chroot "$ROOTFS_DIR" /bin/bash -c "
     export DEBIAN_FRONTEND=noninteractive
 
     apt update
-    apt install -y initramfs-tools grub-pc
+    apt install -y initramfs-tools grub-pc live-boot live-config live-config-systemd
 
     mkinitramfs -o /boot/initrd.img-${KERNEL_VERSION} ${KERNEL_VERSION}
 "
