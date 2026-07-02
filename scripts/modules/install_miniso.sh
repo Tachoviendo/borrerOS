@@ -111,6 +111,29 @@ chroot "$ROOTFS_DIR" /bin/bash -c "
 ok "Usuarios y grupos configurados"
 
 # =============================================================================
+# PASO 3.5 - Forzar visibilidad de usuarios en GDM (AccountsService)
+# =============================================================================
+echo ""
+echo "[3.5/6] Registrando usuarios en AccountsService para que aparezcan en GDM..."
+
+chroot "$ROOTFS_DIR" /bin/bash -c "
+    mkdir -p /var/lib/AccountsService/users
+    chmod 0700 /var/lib/AccountsService/users
+
+    for u in adminso estudiante invitado; do
+        cat > /var/lib/AccountsService/users/\$u <<EOF
+[User]
+Language=
+XSession=
+SystemAccount=false
+EOF
+        chown root:root /var/lib/AccountsService/users/\$u
+        chmod 0644 /var/lib/AccountsService/users/\$u
+    done
+"
+ok "Usuarios registrados en AccountsService (SystemAccount=false)"
+
+# =============================================================================
 # PASO 4 - Permisos de directorios
 # =============================================================================
 echo ""
