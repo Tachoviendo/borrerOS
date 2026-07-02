@@ -1,45 +1,50 @@
-/* This file intentionally left blank. */
-/* Colores UCU */
+/* Sidebar */
 .wy-nav-side {
-    background: #003366 !important;
+    background: #1a2a3a !important;
 }
 
 .wy-side-nav-search {
-    background: #002244 !important;
+    background: #0f1e2d !important;
+    border-bottom: 2px solid #F5A800 !important;
 }
 
 .wy-side-nav-search a {
-    color: #F5A800 !important;
+    color: #ffffff !important;
     font-weight: bold;
 }
 
 .wy-nav-top {
-    background: #003366 !important;
+    background: #1a2a3a !important;
 }
 
 .wy-nav-top a {
-    color: #F5A800 !important;
+    color: #ffffff !important;
 }
 
+/* Links nav */
 .wy-menu-vertical a {
-    color: #cce0ff !important;
+    color: #c8d8e8 !important;
 }
 
 .wy-menu-vertical a:hover {
-    background: #F5A800 !important;
-    color: #003366 !important;
+    background: #2a3f55 !important;
+    color: #ffffff !important;
 }
 
-.wy-menu-vertical li.current>a {
-    background: #00245a !important;
+.wy-menu-vertical li.current>a,
+.wy-menu-vertical li.current a {
+    background: #2a3f55 !important;
     color: #F5A800 !important;
+    border-right: 3px solid #F5A800;
 }
 
 .wy-menu-vertical p.caption {
     color: #F5A800 !important;
     font-weight: bold;
+    letter-spacing: 0.05em;
 }
 
+/* Contenido */
 .rst-content h1 {
     color: #003366;
     border-bottom: 3px solid #F5A800;
@@ -48,6 +53,10 @@
 
 .rst-content h2 {
     color: #003366;
+}
+
+.rst-content h3 {
+    color: #1a2a3a;
 }
 
 .rst-content table.docutils th {

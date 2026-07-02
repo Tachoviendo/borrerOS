@@ -37,22 +37,3 @@ director de la carrera de Informática del Campus Salto, **Armando Borrero**.
    :maxdepth: 2
 
    manual_usuario/index
-
-----
-
-.. raw:: html
-
-   <h1 style="color:#003366; border-bottom:3px solid #F5A800; padding-bottom:8px;">
-     Módulo de I/O — Bluetooth &amp; Audio
-   </h1>
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
-   io_module/index
-
-.. note::
-   La documentación del módulo de Gestión de I/O (Bluetooth y Audio) está
-   disponible en la barra de navegación bajo **Módulo de I/O**.
-

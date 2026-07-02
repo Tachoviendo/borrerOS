@@ -23,6 +23,7 @@ html_theme = "sphinx_rtd_theme"
 html_static_path = ["_static"]
 html_title = "BorrerOS — Documentación"
 html_css_files = ["custom.css"]
+html_show_sourcelink = False
 
 html_theme_options = {
     "collapse_navigation": False,

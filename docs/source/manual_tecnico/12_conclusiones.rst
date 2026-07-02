@@ -35,7 +35,6 @@ aspectos importantes de la administración de sistemas Linux modernos:
 12.2 Conclusión general del proyecto
 --------------------------------------
 
-*(Completar con la reflexión del equipo sobre el proyecto en su conjunto)*
+El desarrollo de **BorrerOS** permitió comprender de manera práctica y profunda la estructura interna de un sistema operativo basado en Linux. A través de la selección, depuración y compilación manual del Kernel, junto con la estructuración del sistema de archivos desde la raíz, se logró consolidar un entorno funcional, minimalista y seguro que responde a los requerimientos técnicos planteados.
 
-.. note::
-   Completar esta sección con las conclusiones grupales antes de la entrega.
+Este proyecto no solo demostró la importancia de la gestión precisa de usuarios, permisos y scripts de automatización para la experiencia del usuario final, sino que también evidenció la complejidad detrás del soporte de hardware y la configuración de servicios esenciales como el subsistema de audio. En conclusión, el desarrollo con éxito de BorrerOS representa una base sólida para el entendimiento de la administración de sistemas y la personalización avanzada de distribuciones GNU/Linux.
