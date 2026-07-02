@@ -21,10 +21,20 @@ bash "${PROJECT_DIR}/scripts/bootstrap_base.sh"
 
 echo ""
 echo "[3/6] Instalando módulos..."
+mount --bind /proc "${ROOTFS_DIR}/proc"
+mount --bind /sys "${ROOTFS_DIR}/sys"
+mount --bind /dev "${ROOTFS_DIR}/dev"
+mount --bind /dev/pts "${ROOTFS_DIR}/dev/pts"
+
 for modulo in "${PROJECT_DIR}/scripts/modules"/install_*.sh; do
     echo "  → $(basename "$modulo")"
     bash "$modulo" "$ROOTFS_DIR"
 done
+
+umount -l "${ROOTFS_DIR}/dev/pts"
+umount -l "${ROOTFS_DIR}/dev"
+umount -l "${ROOTFS_DIR}/sys"
+umount -l "${ROOTFS_DIR}/proc"
 
 echo ""
 echo "[4/6] Configurando contraseña de root..."

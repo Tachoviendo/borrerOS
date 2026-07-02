@@ -79,6 +79,8 @@ echo "[3/6] Configurando usuarios y grupos..."
 chroot "$ROOTFS_DIR" /bin/bash -c "
     export PATH=\$PATH:/usr/sbin:/usr/bin
 
+    apt-get install -y sudo 2>/dev/null
+
     # Crear grupos
     groupadd -f adminso
     groupadd -f estudiantes
